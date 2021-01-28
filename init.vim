@@ -81,6 +81,7 @@ Plug 'preservim/tagbar'
 
 " Snippets
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 
 " Better tabline
@@ -188,3 +189,5 @@ source $HOME/.config/nvim/plug-config/ctrlp.vim
 source $HOME/.config/nvim/plug-config/multicursor.vim
 " Vem-tabline
 source $HOME/.config/nvim/plug-config/vemtabline.vim
+" Utilsnip
+source $HOME/.config/nvim/plug-config/utilsnips.vim

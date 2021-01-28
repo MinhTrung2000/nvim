@@ -1,3 +1,4 @@
+let g:indentLine_enabled = 1
 " Indent Guide
 let g:indentLine_char = '│'
 " For dark theme

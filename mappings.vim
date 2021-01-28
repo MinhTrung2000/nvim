@@ -1,4 +1,5 @@
-nmap <F1> :e ~/.config/nvim/init.vim<CR>
+nnoremap <F1> :e ~/.config/nvim/init.vim<CR>
+nnoremap <leader><F1> :so ~/.config/nvim/init.vim<CR>
 
 nmap q <Nop>
 
