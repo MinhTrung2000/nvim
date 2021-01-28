@@ -1,2 +1,3 @@
+let g:tagbar_ctags_bin = '$HOME/.local/bin/ctags'
 " Tag bar
-nmap <F8> :TagbarToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
