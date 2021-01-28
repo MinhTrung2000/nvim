@@ -8,10 +8,15 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Convert binary, hex, etc..
+" Use gA to view, and crd, crx, cro, crb for converting
+Plug 'glts/vim-magnum'
 Plug 'glts/vim-radical'
 
 " Repeat stuff
 Plug 'tpope/vim-repeat'
+
+" Convenient keymapping
+Plug 'tpope/vim-unimpaired'
 
 " Easymotion
 Plug 'easymotion/vim-easymotion'
@@ -33,6 +38,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 
 " Closetags
+" Error: conflict
 Plug 'alvan/vim-closetag'
 
 " Themes
@@ -191,3 +197,5 @@ source $HOME/.config/nvim/plug-config/multicursor.vim
 source $HOME/.config/nvim/plug-config/vemtabline.vim
 " Utilsnip
 source $HOME/.config/nvim/plug-config/utilsnips.vim
+" Autopair
+source $HOME/.config/nvim/plug-config/autopair.vim

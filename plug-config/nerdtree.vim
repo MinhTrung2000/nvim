@@ -1,22 +1,30 @@
-nmap tt :NERDTreeToggle<CR>
+nnoremap tt :NERDTreeToggle<CR>
+
+" call :NERDTreeCWD -- Change the NERDTree root to the current working directory.
+
+" Mapping note
+" Open file: o; go
+" Open in tab: t, T
+" Open in split window: i, gi
+" Open in vertical split window: s, gs
+" Recursively open: O
+" Jump to root: P
+" Jump to parent: p
+" Change root node to selected: C
+" Move root up one level: u, U
+" Refresh: r, R
+" Display menu: m
+" Chage CWD to selected node: cd
+" Change tree root to CWD: CD
+" Close: q
 
 let g:NERDTreeGitStatusWithFlags = 1
-" let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-" let g:NERDTreeGitStatusNodeColorization = 1
-" let g:NERDTreeColorMapCustom = {
-"   \ "Staged"    : "#0ee375",
-"   \ "Modified"  : "#d9bf91",
-"   \ "Renamed"   : "#51C9FC",
-"   \ "Untracked" : "#FCE77C",
-"   \ "Unmerged"  : "#FC51E6",
-"   \ "Dirty"     : "#FFBD61",
-"   \ "Clean"     : "#87939A",
-"   \ "Ignored"   : "#808080"
-"   \ }
 
 " NERDTree config
-let g:NERDTreeIgnore = ['^node_modules$','\.pyc$', '\.pyo$', '^__pycache__$', '\~$']
+let g:NERDTreeIgnore = ['^node_modules$','\.pyc$', '\.pyo$', '^__pycache__$', '^undo$', '\.o$', '\~$']
 let NERDTreeMinimalUI = 1
+let NERDTreeCascadeSingleChildDir=0
+let NERDTreeCascadeOpenSingleChildDir=0
 
 " Sync open file with NERDTree
 " Check if NERDTree is open or active
