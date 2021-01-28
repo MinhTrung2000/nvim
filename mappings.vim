@@ -59,9 +59,12 @@ nnoremap <Leader>wl :wincmd l<CR>
 nnoremap <Leader>wk :wincmd k<CR>
 nnoremap <Leader>wj :wincmd j<CR>
 nnoremap <Leader>w= :wincmd =<CR>
+nnoremap <Leader>wr :wincmd r<CR>
 
 " Delete buffer on disk
-nnoremap <Leader>qk :call DeleteCurrentFileAndBuffer()<CR>
+nnoremap <Leader>Q :call DeleteCurrentFileAndBuffer()<CR>
+" Delete buffer by calling :Bdelete
+nnoremap <Leader>q :Bdelete<CR>
 
 " Create and restore session
 nnoremap <Leader>ss :mksession! .vimsession<CR>

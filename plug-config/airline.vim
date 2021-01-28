@@ -13,6 +13,11 @@ let airline#extensions#ale#close_lnum_symbol = ')'
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
 
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch = ''
+
 let g:airline#extensions#default#layout = [
 	\ [ 'a', 'b', 'c' ],
 	\ [ 'warning', 'error', 'y', 'z']

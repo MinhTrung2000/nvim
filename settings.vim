@@ -17,10 +17,7 @@ set termguicolors
 set autoindent
 set smartindent
 set shiftround
-set undofile
 set noignorecase
-set undodir=$HOME/.config/nvim/undo
-set undolevels=1000
 set clipboard=unnamedplus
 set hidden
 set whichwrap+=h,l
@@ -49,3 +46,9 @@ set diffopt+=iwhite
 set diffopt+=vertical
 nnoremap <Leader>1 :diffget 1<CR>:diffupdate<CR>
 nnoremap <Leader>2 :diffget 2<CR>:diffupdate<CR>
+
+if has("persistent_undo")
+  set undofile
+  set undodir=$HOME/.config/nvim/undo
+  set undolevels=1000
+endif

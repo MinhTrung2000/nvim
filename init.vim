@@ -131,6 +131,9 @@ Plug 'terryma/vim-multiple-cursors'
 " Generate tags
 Plug 'ludovicchabant/vim-gutentags'
 
+" Delete buffers without closing window
+Plug 'moll/vim-bbye'
+
 call plug#end()
 
 let g:python3_host_prog = "$HOME/anaconda3/bin/python3"
@@ -199,3 +202,5 @@ source $HOME/.config/nvim/plug-config/vemtabline.vim
 source $HOME/.config/nvim/plug-config/utilsnips.vim
 " Autopair
 source $HOME/.config/nvim/plug-config/autopair.vim
+" Undo-tree
+source $HOME/.config/nvim/plug-config/undotree.vim
