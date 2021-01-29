@@ -26,10 +26,10 @@ let g:startify_session_sort = 0
 let g:startify_relative_path = 0
 
 let g:startify_session_before_save = [
-\ 'echo "Save session!."',
-\ 'silent! NERDTreeTabsClose'
+\ 'NERDTreeClose'
 \ ]
 
+" \ 'silent! NERDTreeClose'
 function! StartifyEntryFormat()
     return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
 endfunction

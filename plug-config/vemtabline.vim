@@ -1,7 +1,7 @@
-nmap <leader>th <Plug>vem_move_buffer_left-
-nmap <leader>tl <Plug>vem_move_buffer_right-
-nmap <leader>tp <Plug>vem_prev_buffer-
-nmap <leader>tn <Plug>vem_next_buffer-
+nmap th <Plug>vem_move_buffer_left-
+nmap tl <Plug>vem_move_buffer_right-
+nmap tj <Plug>vem_prev_buffer-
+nmap tk <Plug>vem_next_buffer-
 
 let g:vem_tabline_show_number = 'index'
 nmap <leader>1 :VemTablineGo 1<CR>
@@ -15,3 +15,4 @@ nmap <leader>8 :VemTablineGo 8<CR>
 nmap <leader>9 :VemTablineGo 9<CR>
 nmap <leader>0 :VemTablineGo 10<CR>
 
+command! -nargs=1 Go call VemTablineGo("<args>")

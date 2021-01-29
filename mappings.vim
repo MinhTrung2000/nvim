@@ -24,11 +24,6 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 " In Visual Mode, press 'p' to delete selected text (to blackhold reg: "_) and print
 vnoremap p "_dP
 
-" TAB in general mode will move to text buffer
-nnoremap <silent> <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <silent> <S-TAB> :bprevious<CR>
-
 " Move selected line / block of text in visual mode
 " shift + k to move up
 " shift + j to move down
