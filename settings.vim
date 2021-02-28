@@ -8,7 +8,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set textwidth=79
+" set textwidth=79
 set expandtab
 set noswapfile
 set nowrap
@@ -33,8 +33,19 @@ set signcolumn=yes
 set updatetime=300
 set timeoutlen=500
 set incsearch
+
+au BufNewFile,BufRead *.py:
+\ set tabstop=4
+\ set softtabstop=4
+\ set shiftwidth=4
+\ set textwidth=79
+
+" colorscheme onehalflight
+" let g:airline_theme='onehalfdark'
+
 colorscheme gruvbox
 set background=dark
+
 "Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -44,11 +55,17 @@ filetype plugin indent on
 silent! set splitvertical
 set diffopt+=iwhite
 set diffopt+=vertical
-nnoremap <Leader>1 :diffget 1<CR>:diffupdate<CR>
-nnoremap <Leader>2 :diffget 2<CR>:diffupdate<CR>
+" nnoremap <Leader>1 :diffget 1<CR>:diffupdate<CR>
+" nnoremap <Leader>2 :diffget 2<CR>:diffupdate<CR>
 
 if has("persistent_undo")
   set undofile
   set undodir=$HOME/.config/nvim/undo
   set undolevels=1000
 endif
+
+" augroup NO_CURSOR_MOVE_ON_FOCUS
+"   au!
+"   au FocusLost * let g:oldmouse=&mouse | set mouse=
+"   au FocusGained * if exists('g:oldmouse') | let &mouse=g:oldmouse | unlet g:oldmouse | endif
+" augroup END

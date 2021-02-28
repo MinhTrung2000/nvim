@@ -22,9 +22,10 @@ let g:NERDTreeGitStatusWithFlags = 1
 
 " NERDTree config
 let g:NERDTreeIgnore = ['^node_modules$','\.pyc$', '\.pyo$', '^__pycache__$', '^undo$', '\.o$', '\~$']
-let NERDTreeMinimalUI = 1
-let NERDTreeCascadeSingleChildDir=0
-let NERDTreeCascadeOpenSingleChildDir=0
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeCascadeSingleChildDir=0
+let g:NERDTreeCascadeOpenSingleChildDir=0
+let g:NERDTreeAutoCenter = 0
 
 " Sync open file with NERDTree
 " Check if NERDTree is open or active
@@ -43,3 +44,7 @@ function! SyncTree()
 endfunction
 
 let g:webdevicons_enable_nerdtree = 1
+
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif

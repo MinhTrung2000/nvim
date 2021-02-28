@@ -39,10 +39,11 @@ Plug 'jiangmiao/auto-pairs'
 
 " Closetags
 " Error: conflict
-Plug 'alvan/vim-closetag'
+" Plug 'alvan/vim-closetag'
 
 " Themes
 Plug 'morhetz/gruvbox'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Status line
 Plug 'vim-airline/vim-airline'
@@ -56,10 +57,6 @@ Plug 'Yggdroot/indentLine'
 
 " Choose window fast
 Plug 't9md/vim-choosewin'
-
-" Status Line
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 " Fuzzy
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -100,18 +97,18 @@ Plug 'mbbill/undotree'
 Plug 'brooth/far.vim'
 
 " Auto change html tags
-Plug 'AndrewRadev/tagalong.vim'
+" Plug 'AndrewRadev/tagalong.vim'
 
 " async tasks
-Plug 'skywind3000/asynctasks.vim'
-Plug 'skywind3000/asyncrun.vim'
+" Plug 'skywind3000/asynctasks.vim'
+" Plug 'skywind3000/asyncrun.vim'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
 " Easily Create Gists
-Plug 'mattn/vim-gist'
-Plug 'mattn/webapi-vim'
+" Plug 'mattn/vim-gist'
+" Plug 'mattn/webapi-vim'
 
 " Colorizer
 Plug 'RRethy/vim-hexokinase'
@@ -120,7 +117,7 @@ Plug 'RRethy/vim-hexokinase'
 Plug 'puremourning/vimspector'
 
 " Async Linting Engine
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 " Typescript syntax
 Plug 'HerringtonDarkholme/yats.vim'
@@ -129,10 +126,13 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'terryma/vim-multiple-cursors'
 
 " Generate tags
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 
 " Delete buffers without closing window
 Plug 'moll/vim-bbye'
+
+" Tmux navigation
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -143,6 +143,8 @@ source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/functions.vim
 source $HOME/.config/nvim/mappings.vim
 
+" Python Configuration
+source $HOME/.config/nvim/pydocconf.vim
 " Plugin Configuration
 " coc.nvim
 source $HOME/.config/nvim/plug-config/coc/coc.vim
@@ -164,9 +166,9 @@ source $HOME/.config/nvim/plug-config/closetags.vim
 " Far
 source $HOME/.config/nvim/plug-config/far.vim
 " Tagalong
-source $HOME/.config/nvim/plug-config/tagalong.vim
+" source $HOME/.config/nvim/plug-config/tagalong.vim
 " Asynctask
-source $HOME/.config/nvim/plug-config/asynctask.vim
+" source $HOME/.config/nvim/plug-config/asynctask.vim
 " Markdown-preview
 source $HOME/.config/nvim/plug-config/markdown-preview.vim
 " Vimspector
@@ -175,7 +177,7 @@ source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 " source $HOME/.config/nvim/plug-config/xtabline.vim
 " Ale
-source $HOME/.config/nvim/plug-config/ale.vim
+" source $HOME/.config/nvim/plug-config/ale.vim
 " Colorize
 source $HOME/.config/nvim/plug-config/colorize.vim
 " Tag bar
@@ -185,7 +187,7 @@ source $HOME/.config/nvim/plug-config/choosewin.vim
 " Esearch
 source $HOME/.config/nvim/plug-config/esearch.vim
 " Indent line
-source $HOME/.config/nvim/plug-config/esearch.vim
+source $HOME/.config/nvim/plug-config/indentline.vim
 " NERDTree
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 " NerdCommenter

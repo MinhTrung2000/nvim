@@ -1,4 +1,4 @@
-let g:asyncrun_open = 6
+let g:asyncrun_open = 10 
 let g:asynctasks_term_pos = 'bottom'
 " let g:asynctasks_term_pos = 'top'
 " let g:asynctasks_term_pos = 'tab'

@@ -28,11 +28,11 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)
-" nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> <M-k> :<C-u>execute "!term (pydoc " . expand("<cword>") . ")"<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -60,11 +60,11 @@ augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-" xmap <leader>a  <Plug>(coc-codeaction-selected)
-" nmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>d  <Plug>(coc-codeaction-selected)
+nmap <leader>d  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current line.
-" nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 " nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -159,4 +159,4 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-nmap <F6> :CocCommand prettier.formatFile
+" nmap <F6> :CocCommand prettier.formatFile
