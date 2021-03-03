@@ -30,6 +30,7 @@
     "python"
   ],
   "coc.preferences.hoverTarget": "float",
+  "pyright.enable": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoSearchPaths": true,
   "python.analysis.diagnosticMode": "openFilesOnly",
@@ -43,8 +44,8 @@
   "python.venvPath": "$HOME/anaconda3/bin/python",
   "python.sortImports.path": "$HOME/anaconda3/bin/isort",
   "python.formatting.provider": "yapf",
-  "python.formatting.yapfPath": "$HOME/anaconda3/bin/yapf",
-  "python.formatting.blackPath": "$HOME/anaconda3/bin/black",
+  "python.formatting.yapfPath": "/home/tmtcoder/anaconda3/bin/yapf",
+  "python.formatting.blackPath": "/home/tmtcoder/anaconda3/bin/black",
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": false,
   "python.linting.banditEnabled": false,

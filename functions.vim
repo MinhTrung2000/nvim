@@ -157,3 +157,72 @@ function! Google()
   execute ":!google-chrome %"
 endfunction
 command! Google call Google()
+
+nnoremap <silent> <Leader>U :w<CR> execute(":!python -m unittest %")<CR>
+
+" Run unittest
+function! UnittestRun()
+  silent! wall
+  let file_name = expand('%:t:r')
+  let extension = expand('%:e')
+  let runner = ""
+  let command = ""
+  " if extension == "js"
+  "   let runner = "node"
+  " endif
+  " if extension == "ts"
+  "   let runner = "ts-node"
+  " endif
+  " if extension == "rb"
+  "   let runner = "ruby"
+  " endif
+  " if extension == "go"
+  "   let runner = "go run"
+  " endif
+  if extension == "py"
+    " let runner = "ipython"
+    let runner = "python"
+    let command = "-m unittest"
+  endif
+  " if extension == "swift"
+  "   let runner = "swift"
+  " endif
+  " if extension == "c"
+  "   let runner = "compile"
+  "   let compiler = "gcc -g"
+  " endif
+  " if extension == "cc"
+  "   let runner = "compile"
+  "   let compiler = "g++ -std=c++11 -g"
+  " endif
+  " if extension == "cpp"
+  "   let runner = "compile"
+  "   let compiler = "g++ -std=c++1z -g"
+  " endif
+  " if extension == "hs"
+  "   let runner = "compile"
+  "   let compiler = "ghc"
+  " endif
+  " if extension == "rs"
+  "   let runner = "compile"
+  "   let compiler = "rustc"
+  " endif
+  if runner == ""
+    echoerr "File type not supported!"
+  else
+    execute ":AsyncRun! -save=2 -focus=1 -raw ".runner." ".command." $(VIM_FILEPATH)"
+  endif
+endfunction
+
+command! UnittestRun call UnittestRun()
+nnoremap <silent> <M-u> :UnittestRun<CR>
+
+" function QfMakeConv()
+"   let qflist = getqflist()
+"   for i in qflist
+"     let i.text = iconv(i.text, "cp936", "utf-8")
+"   endfor
+"   call setqflist(qflist)
+" endfunction
+
+" au QuickfixCmdPost make call QfMakeConv()

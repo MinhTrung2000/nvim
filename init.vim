@@ -99,9 +99,9 @@ Plug 'brooth/far.vim'
 " Auto change html tags
 " Plug 'AndrewRadev/tagalong.vim'
 
-" async tasks
-" Plug 'skywind3000/asynctasks.vim'
-" Plug 'skywind3000/asyncrun.vim'
+" Async tasks
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
@@ -168,7 +168,7 @@ source $HOME/.config/nvim/plug-config/far.vim
 " Tagalong
 " source $HOME/.config/nvim/plug-config/tagalong.vim
 " Asynctask
-" source $HOME/.config/nvim/plug-config/asynctask.vim
+source $HOME/.config/nvim/plug-config/asynctask.vim
 " Markdown-preview
 source $HOME/.config/nvim/plug-config/markdown-preview.vim
 " Vimspector

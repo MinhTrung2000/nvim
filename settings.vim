@@ -64,6 +64,8 @@ if has("persistent_undo")
   set undolevels=1000
 endif
 
+let g:python_highlight_all = 1
+
 " augroup NO_CURSOR_MOVE_ON_FOCUS
 "   au!
 "   au FocusLost * let g:oldmouse=&mouse | set mouse=
