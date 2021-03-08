@@ -1,21 +1,16 @@
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-actions',
-  \ 'coc-sh',
   \ 'coc-lists',
-  \ 'coc-emmet',
   \ 'coc-tasks',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-floaterm',
-  \ 'coc-fzf-preview',
+  \ 'coc-eslint',
   \ 'coc-css',
   \ 'coc-cssmodules',
   \ 'coc-stylelintplus',
   \ 'coc-emoji',
   \ 'coc-yaml',
   \ 'coc-pyright',
-  \ 'coc-explorer',
   \ 'coc-svg',
   \ 'coc-prettier',
   \ 'coc-vimlsp',
@@ -23,8 +18,22 @@ let g:coc_global_extensions = [
   \ 'coc-yank',
   \ 'coc-json',
   \ 'coc-marketplace',
+  \ 'coc-import-cost',
+  \ 'coc-html',
+  \ 'coc-fzf-preview',
+  \ 'coc-explorer',
   \ ]
-  " \ 'coc-html',
-  " \ 'coc-tabnine',
-  " \ 'coc-highlight',
 
+" Document
+" https://www.npmjs.com/package/coc-stylelintplus
+" https://github.com/neoclide/coc-snippets
+" https://www.npmjs.com/package/coc-lists
+" https://github.com/voldikss/coc-tasks
+" https://github.com/neoclide/coc-eslint
+" https://www.npmjs.com/package/coc-fzf-preview
+" https://github.com/neoclide/coc-yaml
+" https://github.com/fannheyward/coc-xml
+" https://github.com/neoclide/coc-yank
+" https://github.com/neoclide/coc-json
+" https://github.com/neoclide/coc-html
+" https://github.com/weirongxu/coc-explorer

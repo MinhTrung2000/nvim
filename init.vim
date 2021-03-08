@@ -6,6 +6,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'scrooloose/nerdtree-project-plugin'
 
 " Convert binary, hex, etc..
 " Use gA to view, and crd, crx, cro, crb for converting
@@ -36,10 +37,6 @@ Plug 'ryanoasis/vim-devicons'
 
 " Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
-
-" Closetags
-" Error: conflict
-" Plug 'alvan/vim-closetag'
 
 " Themes
 Plug 'morhetz/gruvbox'
@@ -97,7 +94,7 @@ Plug 'mbbill/undotree'
 Plug 'brooth/far.vim'
 
 " Auto change html tags
-" Plug 'AndrewRadev/tagalong.vim'
+Plug 'AndrewRadev/tagalong.vim'
 
 " Async tasks
 Plug 'skywind3000/asynctasks.vim'
@@ -105,10 +102,6 @@ Plug 'skywind3000/asyncrun.vim'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
-
-" Easily Create Gists
-" Plug 'mattn/vim-gist'
-" Plug 'mattn/webapi-vim'
 
 " Colorizer
 Plug 'RRethy/vim-hexokinase'
@@ -133,6 +126,12 @@ Plug 'moll/vim-bbye'
 
 " Tmux navigation
 Plug 'christoomey/vim-tmux-navigator'
+
+" Bookmark create
+Plug 'MattesGroeger/vim-bookmarks'
+
+" Live server
+Plug 'jaxbot/browserlink.vim'
 
 call plug#end()
 
@@ -175,7 +174,6 @@ source $HOME/.config/nvim/plug-config/markdown-preview.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 " Airline
 source $HOME/.config/nvim/plug-config/airline.vim
-" source $HOME/.config/nvim/plug-config/xtabline.vim
 " Ale
 " source $HOME/.config/nvim/plug-config/ale.vim
 " Colorize
@@ -206,3 +204,7 @@ source $HOME/.config/nvim/plug-config/utilsnips.vim
 source $HOME/.config/nvim/plug-config/autopair.vim
 " Undo-tree
 source $HOME/.config/nvim/plug-config/undotree.vim
+" Bookmark
+source $HOME/.config/nvim/plug-config/vimbookmarks.vim
+" Live server
+source $HOME/.config/nvim/plug-config/browserlink.vim

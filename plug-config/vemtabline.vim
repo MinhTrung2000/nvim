@@ -16,3 +16,5 @@ nmap <leader>9 :VemTablineGo 9<CR>
 nmap <leader>0 :VemTablineGo 10<CR>
 
 command! -nargs=1 Go call VemTablineGo("<args>")
+
+let g:vem_tabline_multiwindow_mode = 0
