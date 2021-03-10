@@ -30,14 +30,14 @@ let g:NERDTreeHighlightCursorline = 1
 let g:NERDTreeChDirMode = 3
 let g:NERDTreeNaturalSort = 1
 let g:NERDTreeAutoCenter = 1
-let g:NERDTreeAutoCenterThreshold = 3
-let g:NERDTreeHijackNetrw = 1
+" let g:NERDTreeAutoCenterThreshold = 3
+" let g:NERDTreeHijackNetrw = 1
 let g:NERDTreeBookmarksFile = '$HOME/.nvim/.NERDTreeBookmarks'
 let g:NERDTreeBookmarksSort = 2
-let g:NERDTreeWinSize = 30
-let g:NERDTreeWinSizeMax = 30
+" let g:NERDTreeWinSize = 30
+" let g:NERDTreeWinSizeMax = 30
 let g:NERDTreeAutoDeleteBuffer = 1
-let g:NERDTreeWinPos = 'left'
+" let g:NERDTreeWinPos = 'left'
 
 " Sync open file with NERDTree
 " Check if NERDTree is open or active
@@ -58,8 +58,8 @@ endfunction
 let g:webdevicons_enable_nerdtree = 1
 
 " Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * silent NERDTreeMirror
+" autocmd BufWinEnter * silent NERDTreeMirror
 
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+"     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif

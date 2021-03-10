@@ -40,7 +40,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " Themes
 Plug 'morhetz/gruvbox'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Status line
 Plug 'vim-airline/vim-airline'
@@ -208,3 +207,5 @@ source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vimbookmarks.vim
 " Live server
 source $HOME/.config/nvim/plug-config/browserlink.vim
+" Gruv box
+source $HOME/.config/nvim/plug-config/gruvbox.vim
