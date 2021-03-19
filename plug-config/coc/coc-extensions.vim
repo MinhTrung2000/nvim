@@ -1,7 +1,6 @@
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-actions',
-  \ 'coc-lists',
   \ 'coc-tasks',
   \ 'coc-tsserver',
   \ 'coc-eslint',
@@ -20,8 +19,8 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace',
   \ 'coc-import-cost',
   \ 'coc-html',
-  \ 'coc-fzf-preview',
   \ 'coc-explorer',
+  \ 'coc-lists',
   \ ]
 
 " Document

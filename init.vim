@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'scrooloose/nerdtree-project-plugin'
+Plug 'unkiwii/vim-nerdtree-sync'
 
 " Convert binary, hex, etc..
 " Use gA to view, and crd, crx, cro, crb for converting
@@ -40,6 +41,7 @@ Plug 'jiangmiao/auto-pairs'
 
 " Themes
 Plug 'morhetz/gruvbox'
+Plug 'tyrannicaltoucan/vim-quantum'
 
 " Status line
 Plug 'vim-airline/vim-airline'
@@ -92,8 +94,10 @@ Plug 'mbbill/undotree'
 " Find and replace
 Plug 'brooth/far.vim'
 
-" Auto change html tags
+" Tags
+Plug 'othree/html5.vim'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'cakebaker/scss-syntax.vim'
 
 " Async tasks
 Plug 'skywind3000/asynctasks.vim'
@@ -108,9 +112,6 @@ Plug 'RRethy/vim-hexokinase'
 " Debugging
 Plug 'puremourning/vimspector'
 
-" Async Linting Engine
-" Plug 'dense-analysis/ale'
-
 " Typescript syntax
 Plug 'HerringtonDarkholme/yats.vim'
 
@@ -124,13 +125,21 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'moll/vim-bbye'
 
 " Tmux navigation
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-navigator'
 
 " Bookmark create
 Plug 'MattesGroeger/vim-bookmarks'
 
 " Live server
 Plug 'jaxbot/browserlink.vim'
+
+" Extended % matching for HTML, LaTeX, and many other languages
+Plug 'vim-scripts/matchit.zip'
+
+" React JSX syntax highlighting
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
@@ -164,7 +173,7 @@ source $HOME/.config/nvim/plug-config/closetags.vim
 " Far
 source $HOME/.config/nvim/plug-config/far.vim
 " Tagalong
-" source $HOME/.config/nvim/plug-config/tagalong.vim
+source $HOME/.config/nvim/plug-config/tagalong.vim
 " Asynctask
 source $HOME/.config/nvim/plug-config/asynctask.vim
 " Markdown-preview
@@ -173,8 +182,6 @@ source $HOME/.config/nvim/plug-config/markdown-preview.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 " Airline
 source $HOME/.config/nvim/plug-config/airline.vim
-" Ale
-" source $HOME/.config/nvim/plug-config/ale.vim
 " Colorize
 source $HOME/.config/nvim/plug-config/colorize.vim
 " Tag bar
@@ -207,5 +214,3 @@ source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vimbookmarks.vim
 " Live server
 source $HOME/.config/nvim/plug-config/browserlink.vim
-" Gruv box
-source $HOME/.config/nvim/plug-config/gruvbox.vim

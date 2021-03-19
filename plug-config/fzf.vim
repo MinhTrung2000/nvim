@@ -24,8 +24,8 @@ let g:fzf_buffers_jump = 1
 " [[B]Commits] Customize the options used by 'git log':
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
-" nnoremap <leader>f :Files<CR>
-" nnoremap <leader>g :Rg<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :Rg<CR>
 
 " [Tags] Command to generate tags file
 let g:fzf_tags_command = 'ctags -R'

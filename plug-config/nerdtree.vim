@@ -38,6 +38,8 @@ let g:NERDTreeBookmarksSort = 2
 " let g:NERDTreeWinSizeMax = 30
 let g:NERDTreeAutoDeleteBuffer = 1
 " let g:NERDTreeWinPos = 'left'
+let g:nerdtree_sync_cursorline = 1
+let g:NERDTreeHighlightCursorline = 1
 
 " Sync open file with NERDTree
 " Check if NERDTree is open or active

@@ -34,17 +34,27 @@ set updatetime=300
 set timeoutlen=500
 set incsearch
 
-au BufNewFile,BufRead *.py:
-\ set tabstop=4
-\ set softtabstop=4
-\ set shiftwidth=4
-\ set textwidth=79
+" au BufNewFile,BufRead *.py:
+" \ set tabstop=4
+" \ set softtabstop=4
+" \ set shiftwidth=4
+" \ set textwidth=79
 
-" colorscheme onehalflight
-" let g:airline_theme='onehalfdark'
+"Todo file
+autocmd BufNewFile,BufRead *.todo set syntax=todo
 
-colorscheme gruvbox
+" Quantum theme
+" let g:quantum_black=1
+" let g:airline_theme='quantum'
+" let g:quantum_italics=1
+" set background=dark
+" colorscheme quantum
+
+" Gruvbox theme
+let g:gruvbox_constrast_dark = "soft"
+let	g:gruvbox_sign_column = "bg0"
 set background=dark
+colorscheme gruvbox
 
 "Enable folding
 set foldmethod=indent
@@ -63,8 +73,6 @@ if has("persistent_undo")
   set undodir=$HOME/.config/nvim/undo
   set undolevels=1000
 endif
-
-let g:python_highlight_all = 1
 
 " augroup NO_CURSOR_MOVE_ON_FOCUS
 "   au!
