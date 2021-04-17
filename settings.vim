@@ -8,7 +8,6 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-" set textwidth=79
 set expandtab
 set noswapfile
 set nowrap
@@ -34,21 +33,14 @@ set updatetime=300
 set timeoutlen=500
 set incsearch
 
-" au BufNewFile,BufRead *.py:
-" \ set tabstop=4
-" \ set softtabstop=4
-" \ set shiftwidth=4
-" \ set textwidth=79
+au BufNewFile,BufRead *.py:
+\ set tabstop=4
+\ set softtabstop=4
+\ set shiftwidth=4
+\ set textwidth=79
 
 "Todo file
 autocmd BufNewFile,BufRead *.todo set syntax=todo
-
-" Quantum theme
-" let g:quantum_black=1
-" let g:airline_theme='quantum'
-" let g:quantum_italics=1
-" set background=dark
-" colorscheme quantum
 
 " Gruvbox theme
 let g:gruvbox_constrast_dark = "soft"
@@ -65,8 +57,8 @@ filetype plugin indent on
 silent! set splitvertical
 set diffopt+=iwhite
 set diffopt+=vertical
-" nnoremap <Leader>1 :diffget 1<CR>:diffupdate<CR>
-" nnoremap <Leader>2 :diffget 2<CR>:diffupdate<CR>
+nnoremap <M-1> :diffget 1<CR>:diffupdate<CR>
+nnoremap <M-2> :diffget 2<CR>:diffupdate<CR>
 
 if has("persistent_undo")
   set undofile
@@ -74,8 +66,6 @@ if has("persistent_undo")
   set undolevels=1000
 endif
 
-" augroup NO_CURSOR_MOVE_ON_FOCUS
-"   au!
-"   au FocusLost * let g:oldmouse=&mouse | set mouse=
-"   au FocusGained * if exists('g:oldmouse') | let &mouse=g:oldmouse | unlet g:oldmouse | endif
-" augroup END
+" Save cursor position when moving between buffers.
+" Restore by centering cursor line in screen by `zz` command.
+autocmd BufEnter * silent! normal! g`zz"

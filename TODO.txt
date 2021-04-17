@@ -1,11 +1,9 @@
 _ 1. Config Snippets Plugins.
 _ 2. Config search & replace engine -- Far.vim
 _ 3. Config for Asynctask, Asyncrun
-_ 4. Config for Makedown-review
-_ 5. Config for Gist plug -- vim-gist
-_ 6. Config for debug engine -- Vimspector
-_ 7. Set autoremove mru nonexist file (by using CocList mru.validate command)
-     See: https://www.npmjs.com/package/coc-lists
+_ 4. Config for Markdown-review
+_ 5. Config for debug engine -- Vimspector
+
 Low Priority:
 _ 1. Config for yats.vim
 _ 2. Config for multicursor

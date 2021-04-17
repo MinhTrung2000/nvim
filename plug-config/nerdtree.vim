@@ -20,6 +20,19 @@ nnoremap tt :NERDTreeToggle<CR>
 
 let g:NERDTreeGitStatusWithFlags = 1
 
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+
 " NERDTree config
 let g:NERDTreeIgnore = ['^node_modules$','\.pyc$', '\.pyo$', '^__pycache__$', '^undo$', '\.o$', '\~$']
 let g:NERDTreeMinimalUI = 1
@@ -30,10 +43,11 @@ let g:NERDTreeHighlightCursorline = 1
 let g:NERDTreeChDirMode = 3
 let g:NERDTreeNaturalSort = 1
 let g:NERDTreeAutoCenter = 1
+let g:NERDTreeGitStatusUseNerdFonts = 1
 " let g:NERDTreeAutoCenterThreshold = 3
 " let g:NERDTreeHijackNetrw = 1
-let g:NERDTreeBookmarksFile = '$HOME/.nvim/.NERDTreeBookmarks'
-let g:NERDTreeBookmarksSort = 2
+" let g:NERDTreeBookmarksFile = '$HOME/.nvim/.NERDTreeBookmarks'
+" let g:NERDTreeBookmarksSort = 2
 " let g:NERDTreeWinSize = 30
 " let g:NERDTreeWinSizeMax = 30
 let g:NERDTreeAutoDeleteBuffer = 1
@@ -63,5 +77,5 @@ let g:webdevicons_enable_nerdtree = 1
 " autocmd BufWinEnter * silent NERDTreeMirror
 
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-" autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-"     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif

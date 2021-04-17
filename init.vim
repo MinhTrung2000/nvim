@@ -41,7 +41,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " Themes
 Plug 'morhetz/gruvbox'
-Plug 'tyrannicaltoucan/vim-quantum'
 
 " Status line
 Plug 'vim-airline/vim-airline'
@@ -127,9 +126,6 @@ Plug 'moll/vim-bbye'
 " Tmux navigation
 " Plug 'christoomey/vim-tmux-navigator'
 
-" Bookmark create
-Plug 'MattesGroeger/vim-bookmarks'
-
 " Live server
 Plug 'jaxbot/browserlink.vim'
 
@@ -140,6 +136,9 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
+
+" Generate python docstring
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 call plug#end()
 
@@ -205,7 +204,7 @@ source $HOME/.config/nvim/plug-config/multicursor.vim
 " Vem-tabline
 source $HOME/.config/nvim/plug-config/vemtabline.vim
 " Utilsnip
-source $HOME/.config/nvim/plug-config/utilsnips.vim
+source $HOME/.config/nvim/plug-config/ultisnips.vim
 " Autopair
 source $HOME/.config/nvim/plug-config/autopair.vim
 " Undo-tree
