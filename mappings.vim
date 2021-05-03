@@ -5,9 +5,6 @@ nmap q <Nop>
 
 let mapleader=" "
 
-" let localleader=" "
-" nnoremap <Space> <Nop>
-
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
@@ -29,8 +26,6 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 vnoremap p "_dP
 
 " Move selected line / block of text in visual mode
-" shift + k to move up
-" shift + j to move down
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
@@ -52,6 +47,7 @@ nnoremap <Leader>wr :wincmd r<CR>
 
 " Delete buffer on disk
 nnoremap <Leader>Q :call DeleteCurrentFileAndBuffer()<CR>
+
 " Delete buffer by calling :Bdelete
 nnoremap <Leader>q :Bdelete<CR>
 
@@ -63,3 +59,6 @@ nnoremap <silent> <C-Up>    :resize -2<CR>
 nnoremap <silent> <C-Down>  :resize +2<CR>
 nnoremap <silent> <C-Left>  :vertical resize -2<CR>
 nnoremap <silent> <C-Right> :vertical resize +2<CR>
+
+" Terminal
+nnoremap <silent> <M-t> :execute "!kitty --directory=%:p:h --detach"<CR>

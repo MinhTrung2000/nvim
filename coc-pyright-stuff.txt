@@ -1,0 +1,35 @@
+# Add this block to help anaconda3 recognize
+{
+    "venvPath": "/home/tmtcoder/anaconda3/envs",
+    "venv": "python"
+}
+
+# Sample pyrightconfig.json 
+{
+  "include": [
+    "src"
+  ],
+  
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "src/typestubs"
+  ],
+
+  "venvPath": "$HOME/anaconda3/envs",
+  "venv": "python",
+
+  "ignore": [
+  ],
+
+  "stubPath": "src/stubs",
+
+  "executionEnvironments": [
+    {
+      "root": "src/web",
+      "extraPaths": [
+        "src/service_libs"
+      ]
+    },
+  ]
+}

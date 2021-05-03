@@ -6,7 +6,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'unkiwii/vim-nerdtree-sync'
 
 " Convert binary, hex, etc..

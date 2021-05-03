@@ -68,4 +68,5 @@ endif
 
 " Save cursor position when moving between buffers.
 " Restore by centering cursor line in screen by `zz` command.
-autocmd BufEnter * silent! normal! g`zz"
+" autocmd BufEnter * silent! normal! g`"
+" autocmd BufEnter * silent! normal! g`zz"

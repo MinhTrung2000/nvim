@@ -19,7 +19,6 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace',
   \ 'coc-import-cost',
   \ 'coc-html',
-  \ 'coc-explorer',
   \ 'coc-lists',
   \ ]
 
