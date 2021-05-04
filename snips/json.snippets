@@ -1,0 +1,29 @@
+snippet pyconf "Edit pyright config" b
+{
+  "include": [
+    "src"
+  ],
+  
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "src/typestubs"
+  ],
+
+  "ignore": [
+  ],
+
+  "stubPath": "src/stubs",
+
+  "executionEnvironments": [
+    {
+      "root": "src/web",
+      "pythonVersion": "3.5",
+      "pythonPlatform": "Windows",
+      "extraPaths": [
+        "src/service_libs"
+      ]
+    },
+  ]
+}
+endsnippet

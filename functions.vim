@@ -48,6 +48,7 @@ augroup END
 " Vim QuickRun
 function! Quickrun(isfull)
   silent! wall
+  let file_path = expand('%:p:h')
   let file_name = expand('%:t:r')
   let extension = expand('%:e')
   let runner = ""
@@ -102,10 +103,10 @@ function! Quickrun(isfull)
     if a:isfull == "false"
       if runner == "compile"
         " execute "!(".compiler." ".file_name.".".extension." -o ".file_name." && ./".file_name.")"
-        execute ":AsyncRun -save=2 ".compiler." ".file_name.".".extension." -o ".file_name." && ./".file_name.")"
+        execute ":AsyncRun -save=2 ".compiler." '"file_path."/".file_name.".".extension."' -o ".file_name." && ./".file_name.")"
       else
         " execute ":!".runner." ".file_name.".".extension
-        execute ":AsyncRun -save=2 ".runner." ".file_name.".".extension
+        execute ":AsyncRun -save=2 ".runner." '".file_path."/".file_name.".".extension."'"
       endif
     endif
   endif
@@ -120,7 +121,8 @@ command! QuickRunFull call Quickrun("true")
 " Run unittest
 function! RunUnittest()
   silent! wall
-  let file_name = expand('%:t:r')
+  " let file_path = expand('%:p:h')
+  " let file_name = expand('%:t:r')
   let extension = expand('%:e')
   let runner = ""
   let command = ""
