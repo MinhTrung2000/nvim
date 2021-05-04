@@ -52,9 +52,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Indent line
 Plug 'Yggdroot/indentLine'
 
-" Choose window fast
-Plug 't9md/vim-choosewin'
-
 " Fuzzy
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -106,7 +103,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
 " Colorizer
-Plug 'RRethy/vim-hexokinase'
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " Debugging
 Plug 'puremourning/vimspector'
@@ -185,8 +182,6 @@ source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/colorize.vim
 " Tag bar
 source $HOME/.config/nvim/plug-config/tagbar.vim
-" Choose-win
-source $HOME/.config/nvim/plug-config/choosewin.vim
 " Esearch
 source $HOME/.config/nvim/plug-config/esearch.vim
 " Indent line
